@@ -10,7 +10,7 @@ import os
 
 recogniser = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "70e1e7b6313a4adda4902f4bf1f841bc"
+newsapi = "API KEY of newsapi"
 
 def speak(text):
     engine.say(text)
@@ -38,7 +38,7 @@ def speak(text):
 
 def aiprocess(command):
     client = OpenAI(
-    api_key="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"
+    api_key="API KEY of open ai"
     )
 
     completion = client.chat.completions.create(
@@ -100,7 +100,7 @@ if __name__ == "__main__":
         try:
             with sr.Microphone() as source:
                 print("listening...")
-                audio = r.listen(source,timeout=3,phrase_time_limit=5)
+                audio = r.listen(source,timeout=3,phrase_time_limit=3)
 
             word = r.recognize_google(audio)
             if (word.lower() == "jarvis"):
