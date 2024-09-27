@@ -1,0 +1,10 @@
+the client.py is the code to integrate openai into the jarvis project
+it is paid element and therefore need to buy the subscription for it to work.
+
+also in the main.py there is gttx i.e. google text to speech module which is also a paid element
+hence it has been commented out so that the program doesnt get interrupted.
+
+NOTE: if you are using gttx, then remember to name it as friday as it has a female voice.
+
+P.S. there seem to be a problem with news section in this project and i dont know why and i am too lazy to figure it out so i am writing
+this text to remind my future self to look into it.
